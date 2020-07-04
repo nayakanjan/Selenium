@@ -2,6 +2,10 @@
 //AUTHOR:ANJAN NAYAK
 //------------------------------------------------
 package Test1;
+//
+//Author: ANJAN NAYAK
+////
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,9 +17,19 @@ import org.openqa.selenium.support.ui.Select;
 //import org.openqa.selenium.chrome.ChromeDriver;
 //
 public class Test1 {
+	
+	  static void myMethod(String fname, int age) {
+		    System.out.println(fname + " is " + age);
+		  }
+
+		  
 
 
 	public static void main(String[] args) {
+		
+		myMethod("anjan", 5);
+		
+
         // declaration and instantiation of objects/variables
     	//System.setProperty("webdriver.firefox.marionette","C:/ANJAN/Automation/geckodriver.exe");
 		//WebDriver driver = new FirefoxDriver();
@@ -46,7 +60,9 @@ public class Test1 {
         driver.findElement(By.name("userName")).sendKeys("mercury");
 
         // Type in the password
-        driver.findElement(By.name("password")).sendKeys("mercury");
+        
+        
+        driver.findElement(By.name("password")).sendKeys("abc");
 
         // Click the Submit button
         driver.findElement(By.name("submit")).click();
@@ -54,16 +70,19 @@ public class Test1 {
         driver.findElement(By.cssSelector("font:nth-child(1) > input:nth-child(2)")).click();
          @SuppressWarnings("unused")
 		Select nopsg=new Select(driver.findElement(By.name("passCount")));
-         nopsg.selectByValue("3");
+         nopsg.selectByValue("6");
      	Select city=new Select(driver.findElement(By.name("fromPort")));
         city.selectByValue("London");
     	Select month=new Select(driver.findElement(By.name("fromMonth")));
         month.selectByValue("May");
-        
+   
+    
+     
 //        //close Fire fox
-    //driver.close();
+    driver.close();
              
         //driver.findElement(By.name=)
-        ;
     }    
 }
+
+
