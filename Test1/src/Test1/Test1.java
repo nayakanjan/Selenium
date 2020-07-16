@@ -1,5 +1,5 @@
 //----------------------------------------------
-//AUTHOR:ANJAN Kumar NAYAK _
+//AUTHOR:ANJAN Kumara NAYAK _
 //------------------------------------------------
 package Test1;
 //
